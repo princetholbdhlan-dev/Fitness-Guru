@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Guru - Transform Your Body Naturally</title>
+<meta name="description" content="Effective workout routines, balanced diet plans, and natural weight loss strategies.">
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+background-color: #f8f9fa;
+color: #333;
+line-height: 1.6;
+}
+header {
+background-color: #111;
+color: #fff;
+padding: 1rem 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+header .logo {
+font-size: 1.5rem;
+font-weight: bold;
+color: #28a745;
+}
+nav ul {
+display: flex;
+list-style: none;
+gap: 1.5rem;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+transition: color 0.3s;
+}
+nav a:hover {
+color: #28a745;
+}
+.hero {
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80') center/cover;
+color: #fff;
+text-align: center;
+padding: 5rem 1rem;
+}
+.hero h1 {
+font-size: 2.8rem;
+margin-bottom: 1rem;
+}
+.hero p {
+font-size: 1.2rem;
+max-width: 600px;
+margin: 0 auto 1.5rem;
+}
+.container {
+max-width: 1100px;
+margin: 2rem auto;
+padding: 0 1rem;
+}
+.section-title {
+text-align: center;
+margin-bottom: 2rem;
+font-size: 2rem;
+color: #222;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1.5rem;
+margin-bottom: 3rem;
+}
+.card {
+background: #fff;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+transition: transform 0.3s;
+}
+.card:hover {
+transform: translateY(-5px);
+}
+.card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+.card-content {
+padding: 1.2rem;
+}
+.card-content h3 {
+margin-bottom: 0.5rem;
+color: #111;
+}
+.card-content p {
+color: #666;
+font-size: 0.95rem;
+}
+/* BMI Calculator */
+.bmi-section {
+background: #fff;
+padding: 2rem;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+max-width: 500px;
+margin: 3rem auto;
+}
+.bmi-form {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+.bmi-form input {
+padding: 0.8rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 1rem;
+}
+.bmi-form button {
+padding: 0.8rem;
+background: #28a745;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+cursor: pointer;
+font-weight: bold;
+}
+.bmi-form button:hover {
+background: #218838;
+}
+.result {
+margin-top: 1rem;
+font-size: 1.1rem;
+font-weight: bold;
+text-align: center;
+}
+footer {
+background: #111;
+color: #aaa;
+text-align: center;
+padding: 2rem 1rem;
+margin-top: 3rem;
+}
+footer a {
+color: #28a745;
+text-decoration: none;
+margin: 0 10px;
+}
+footer a:hover {
+text-decoration: underline;
+}
+@media (max-width: 768px) {
+header {
+flex-direction: column;
+gap: 1rem;
+}
+.hero h1 {
+font-size: 2rem;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">Fitness Guru</div>
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#workouts">Workouts</a></li>
+<li><a href="#weight-loss">Weight Loss</a></li>
+<li><a href="#diet-plans">Diet Plans</a></li>
+<li><a href="#bmi-calculator">BMI Calculator</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Transform Your Body Naturally</h1>
+<p>Effective workout routines, balanced diet plans, and natural weight loss strategies for a healthier life.</p>
+</section>
+
+<div class="container">
+
+<!-- Latest Workouts -->
+<h2 class="section-title" id="workouts">Latest Workout Articles</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="Home Workout">
+<div class="card-content">
+<h3>10 Effective Home Workouts</h3>
+<p>No equipment needed! Build strength and burn calories right from your living room.</p>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=500&q=80" alt="Gym Workout">
+<div class="card-content">
+<h3>Beginner Gym Guide</h3>
+<p>A step-by-step breakdown of essential exercises for muscle gain and conditioning.</p>
+</div>
+</div>
+</div>
+
+<!-- Weight Loss -->
+<h2 class="section-title" id="weight-loss">Weight Loss Strategies</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=500&q=80" alt="Weight Loss">
+<div class="card-content">
+<h3>Natural Fat Loss Tips</h3>
+<p>Learn how simple daily habits can accelerate your metabolism without crash dieting.</p>
+</div>
+</div>
+</div>
+
+<!-- Diet Plans -->
+<h2 class="section-title" id="diet-plans">Balanced Diet Plans</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=500&q=80" alt="Healthy Diet">
+<div class="card-content">
+<h3>High-Protein Nutrition Guide</h3>
+<p>Fuel your muscles with healthy, natural, and budget-friendly protein meals.</p>
+</div>
+</div>
+</div>
+
+<!-- BMI Calculator -->
+<section class="bmi-section" id="bmi-calculator">
+<h2 style="text-align: center; margin-bottom: 1rem;">BMI Calculator</h2>
+<div class="bmi-form">
+<input type="number" id="weight" placeholder="Weight (in kg)" required>
+<input type="number" id="height" placeholder="Height (in cm)" required>
+<button onclick="calculateBMI()">Calculate BMI</button>
+</div>
+<div class="result" id="bmi-result"></div>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Fitness Guru. All Rights Reserved.</p>
+<p style="margin-top: 10px;">
+<a href="#">About Us</a> |
+<a href="#">Contact Us</a> |
+<a href="#">Privacy Policy</a> |
+<a href="#">Terms of Service</a> |
+<a href="#">Disclaimer</a>
+</p>
+</footer>
+
+<script>
+function calculateBMI() {
+const weight = parseFloat(document.getElementById('weight').value);
+const heightCm = parseFloat(document.getElementById('height').value);
+const resultDiv = document.getElementById('bmi-result');
+
+if (!weight || !heightCm || weight <= 0 || heightCm <= 0) {
+resultDiv.style.color = 'red';
+resultDiv.innerHTML = "Please enter valid numbers!";
+return;
+}
+
+const heightM = heightCm / 100;
+const bmi = (weight / (heightM * heightM)).toFixed(1);
+
+let status = "";
+let color = "";
+
+if (bmi < 18.5) {
+status = "Underweight";
+color = "#ffc107";
+} else if (bmi >= 18.5 && bmi <= 24.9) {
+status = "Normal weight (Healthy)";
+color = "#28a745";
+} else if (bmi >= 25 && bmi <= 29.9) {
+status = "Overweight";
+color = "#fd7e14";
+} else {
+status = "Obese";
+color = "#dc3545";
+}
+
+resultDiv.style.color = color;
+resultDiv.innerHTML = Your BMI is &lt;strong&gt;${bmi}</strong> (${status});
+}
+</script>
+</body>
+</html>
